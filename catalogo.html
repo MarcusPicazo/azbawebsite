@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catálogo Completo y Precios — AZBA Factory</title>
+<meta name="description" content="El catálogo completo de renta de AZBA Factory: equipo industrial de cocina, mesas, vajilla, cubiertos, cristalería y mobiliario para el lounge nupcial, con precios en MXN.">
+<meta name="theme-color" content="#060504">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+
+<a class="whatsapp-fab" data-whatsapp="Hola AZBA, vi el catálogo y me gustaría cotizar equipo." aria-label="Chatear por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.02 3C9.1 3 3.48 8.6 3.48 15.5c0 2.43.68 4.7 1.87 6.64L3 29l7.06-2.3a12.53 12.53 0 0 0 5.96 1.5h.01c6.92 0 12.54-5.6 12.54-12.5S22.94 3 16.02 3Zm0 22.7c-1.93 0-3.75-.5-5.33-1.44l-.38-.22-4.19 1.37 1.4-4.06-.25-.42a10.34 10.34 0 0 1-1.6-5.43c0-5.7 4.66-10.35 10.37-10.35 2.77 0 5.37 1.08 7.33 3.03a10.28 10.28 0 0 1 3.04 7.32c0 5.7-4.66 10.2-10.39 10.2Zm5.68-7.65c-.31-.16-1.84-.9-2.12-1.01-.28-.1-.49-.16-.7.16-.2.31-.8 1-.98 1.22-.18.2-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.53a9.3 9.3 0 0 1-1.71-2.13c-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.2-.31.31-.52.1-.2.05-.39-.02-.55-.08-.16-.7-1.7-.96-2.32-.25-.6-.5-.53-.7-.53h-.6c-.2 0-.55.08-.83.39-.28.31-1.1 1.07-1.1 2.62 0 1.54 1.13 3.03 1.28 3.24.16.2 2.2 3.37 5.34 4.72.75.32 1.33.51 1.78.66.75.24 1.43.2 1.97.13.6-.09 1.84-.75 2.1-1.48.26-.72.26-1.34.18-1.47-.07-.14-.28-.22-.6-.38Z"/></svg>
+</a>
+
+<header class="site-header is-scrolled">
+  <div class="container">
+    <a href="index.html" class="logo-mark">AZBA</a>
+    <nav class="main-nav">
+      <a href="index.html#story">Historia</a>
+      <a href="index.html#macro">Detalle</a>
+      <a href="index.html#engineering">Ficha Técnica</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="index.html#cta">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="Alternar menú"><span></span><span></span><span></span></button>
+      <a href="index.html#cta" class="btn btn--primary btn--sm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 5l7 7-7 7M5 12h15"/></svg>
+        <span>Solicitar Cotización</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="cat-hero">
+    <div class="container cat-hero__content">
+      <p class="eyebrow">Catálogo 2026</p>
+      <h1>Catálogo Completo y Precios</h1>
+      <p>Cada pieza que renta AZBA Factory, organizada por categoría y cotizada en Pesos Mexicanos, IVA incluido. Explora el catálogo abajo o descarga el PDF original.</p>
+      <div class="cat-hero__actions">
+        <a href="assets/AZBA-Catalogo-2026.pdf" class="btn btn--primary" target="_blank" rel="noopener">Descargar PDF</a>
+        <a href="index.html" class="btn btn--ghost">&larr; Volver al Sitio</a>
+      </div>
+      <p class="cat-hero__meta"><span data-stat-items>150+</span> artículos en <span data-stat-categories>6</span> categorías · Precios en MXN, IVA incluido</p>
+    </div>
+  </section>
+
+  <nav class="cat-subnav">
+    <div class="cat-subnav__list" id="cat-subnav-list"></div>
+  </nav>
+
+  <div class="cat-body container">
+    <div id="catalog-root"></div>
+
+    <div class="cat-cta">
+      <h3>¿No encuentras lo que necesitas?</h3>
+      <p>Escríbenos la fecha del evento, el número de invitados y el equipo de tu lista — la mayoría de las cotizaciones salen el mismo día.</p>
+      <div class="cat-cta__actions">
+        <a href="index.html#cta" class="btn btn--primary">Solicitar Cotización</a>
+        <a class="btn btn--whatsapp" data-whatsapp="Hola AZBA, vi el catálogo completo y me gustaría cotizar equipo.">
+          <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" style="width:1.1em;height:1.1em;"><path d="M16.02 3C9.1 3 3.48 8.6 3.48 15.5c0 2.43.68 4.7 1.87 6.64L3 29l7.06-2.3a12.53 12.53 0 0 0 5.96 1.5h.01c6.92 0 12.54-5.6 12.54-12.5S22.94 3 16.02 3Z"/></svg>
+          Chatear por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="logo-mark">AZBA</span>
+        <p>Renta de equipo industrial de cocina, insumos para banquetes y mobiliario para eventos.</p>
+        <div class="footer__social">
+          <a href="https://wa.me/525624230088" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.1 3 3.48 8.6 3.48 15.5c0 2.43.68 4.7 1.87 6.64L3 29l7.06-2.3a12.53 12.53 0 0 0 5.96 1.5h.01c6.92 0 12.54-5.6 12.54-12.5S22.94 3 16.02 3Z"/></svg></a>
+          <a href="https://facebook.com/AzbaFactory" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.4-3H13.5V8.4c0-.87.24-1.46 1.5-1.46H16.5V4.32C16.24 4.29 15.36 4.2 14.34 4.2c-2.13 0-3.6 1.3-3.6 3.68v2.6H8v3h2.74V21Z"/></svg></a>
+          <a href="https://instagram.com/azba_factory" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Sitio</h5>
+        <ul>
+          <li><a href="index.html#story">Historia</a></li>
+          <li><a href="index.html#macro">Detalle</a></li>
+          <li><a href="index.html#engineering">Ficha Técnica</a></li>
+          <li><a href="catalogo.html">Catálogo Completo</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Categorías</h5>
+        <ul>
+          <li><a href="#equipo-de-cocina">Equipo de Cocina</a></li>
+          <li><a href="#vajilla">Vajilla</a></li>
+          <li><a href="#cristaleria">Cristalería</a></li>
+          <li><a href="#sillones-de-novios">Sillones de Novios</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="tel:+525648240232">56 4824 0232</a></li>
+          <li><a href="tel:+525624230088">56 2423 0088</a></li>
+          <li><a href="mailto:azbafactory@gmail.com">azbafactory@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 AZBA Factory. Renta de equipo para eventos y banquetes.</span>
+      <span>Precios en MXN, IVA incluido.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="js/catalogo.js"></script>
+</body>
+</html>

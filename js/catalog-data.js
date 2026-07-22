@@ -1,0 +1,298 @@
+// Real product data transcribed from the AZBA Factory 2026 rental catalog (PDF).
+// Prices are MXN, IVA incluido, per the source document.
+
+export const CATALOG_META = {
+  year: 2026,
+  currency: 'Pesos Mexicanos (MXN) con IVA incluido',
+  whatsapp: ['56 48240232', '56 24230088'],
+  email: 'azbafactory@gmail.com',
+  facebook: 'Azba Factory',
+  instagram: 'azba_factory',
+};
+
+export const CATALOG = [
+  {
+    id: 'equipo-de-cocina',
+    title: 'Equipo de Cocina',
+    image: { src: 'assets/img/catalog/equipo-de-cocina.jpg', credit: 'Foto: Winedirector / Wikimedia Commons (CC BY-SA 3.0)' },
+    note: 'Los equipos que requieren gas incluyen base, conectores y manguera. El tanque se renta por separado.',
+    groups: [
+      {
+        name: 'Cocción',
+        items: [
+          { name: 'Estufa 6 Quemadores con Horno Coriat', desc: 'Acero inoxidable, quemadores de alta presión', price: 3600, tag: 'Insignia' },
+          { name: 'Parrilla Industrial', desc: 'Dos quemadores a gas', price: 1200 },
+          { name: 'Grill Chico Coriat', desc: 'Asador a gas', price: 1200 },
+          { name: 'Plancha Industrial Coriat', desc: '60 x 60 cm', price: 1200 },
+          { name: 'Plancha Industrial Doble', desc: '100 x 60 cm', price: 2400 },
+          { name: 'Freidora Industrial Coriat', price: 750 },
+          { name: 'Freidora con Termostato 20 L', price: 2750 },
+          { name: 'Grill de Carbón / Gas', desc: 'No incluye carbón', price: 1800 },
+          { name: 'Horno Industrial Coriat', price: 3500 },
+          { name: 'Horno de Convección Industrial Portátil', price: 5500 },
+          { name: 'Horno de Convección Goliat', desc: 'Capacidad 12 charolas · con ruedas, 300 kg · gas o electricidad', price: 8800 },
+          { name: 'Horno Eléctrico Chico', price: 3200 },
+          { name: 'Horno Eléctrico Grande', priceLabel: 'A cotizar' },
+          { name: 'Freidora Eléctrica Industrial 5 L y 8 L', price: 1110 },
+          { name: 'Plancha Eléctrica Industrial', price: 1200 },
+          { name: 'Parrilla de Inducción Industrial', price: 1200 },
+          { name: 'Estufón Bajo Industrial Coriat', desc: '3 coronas', price: 1200 },
+          { name: 'Rack / Espiguero', desc: '12 a 18 charolas', price: 1200 },
+          { name: 'Tanque de Gas 10 kg', desc: 'Recarga: $250.00 MXN', price: 400 },
+        ],
+      },
+      {
+        name: 'Refrigeración',
+        items: [
+          { name: 'Refrigerador 7 M', desc: 'Puerta de cristal', price: 3400 },
+          { name: 'Refrigerador 2 Puertas', desc: '8.5 M, puertas de cristal', price: 5000 },
+          { name: 'Frigo Bar', price: 1200 },
+          { name: 'Congelador', price: 3500 },
+          { name: 'Abatidor de Temperatura', price: 3500 },
+          { name: 'Refrigerador Cervecero Chico', price: 1500 },
+          { name: 'Mesa Fría', price: 3500 },
+          { name: 'Calentón de Tránsito', desc: '12 insertos', price: 1200 },
+          { name: 'Calentón Eléctrico', desc: '12 insertos', price: 2400 },
+        ],
+      },
+      {
+        name: 'Preparación y Batidoras',
+        items: [
+          { name: 'Batidora Industrial 30 Litros', price: 3500 },
+          { name: 'Batidora Profesional Hammilton 5 L', price: 2500 },
+          { name: 'Licuadora Frapeadora', price: 1200 },
+          { name: 'Licuadora Bar', price: 1000 },
+          { name: 'Licuadora de Espiga', desc: 'Licuadora de mano', price: 1000 },
+          { name: 'Procesador de Alimentos KitchenAid', price: 1200 },
+          { name: 'Máquina para Pasta', price: 500 },
+          { name: 'Mandolina Metálica', price: 450 },
+          { name: 'Rebanadora de Carnes Frías', priceLabel: 'A cotizar' },
+          { name: 'Máquina de Vacío', price: 3000 },
+          { name: 'Báscula Industrial 50 kg Torrey', price: 700 },
+          { name: 'Olla Express 20 Litros', price: 1000 },
+          { name: 'Olla Express 5 Litros', price: 250 },
+          { name: 'Secador de Lechuga', desc: 'Salad dryer', price: 450 },
+          { name: 'Mesa de Trabajo', desc: 'Acero inoxidable', price: 1200 },
+          { name: 'Tarja para Trastes Grande', desc: 'Costo de instalación por separado', price: 3500 },
+          { name: 'Charola de Acero Inoxidable', desc: '63 x 44 cm', price: 70 },
+        ],
+      },
+      {
+        name: 'Bar y Bebidas',
+        items: [
+          { name: 'Dispensador de Agua Fría y Caliente', price: 500 },
+          { name: 'Granitora de Bebidas', price: 5000 },
+          { name: 'Mentecadora de Helados', priceLabel: 'A cotizar' },
+          { name: 'Dispensador de Bebidas Industrial', price: 2200 },
+          { name: 'Cafetera Eléctrica', desc: 'Para 50 / 100 tazas', price: 350 },
+          { name: 'Champañera de Acero con Base', price: 160 },
+          { name: 'Jarras Cafeteras Térmicas', price: 45 },
+          { name: 'Kit de Bar', desc: 'Shaker, colador especial, cuchara bailarina, jigger', price: 480 },
+          { name: 'Hielera Grande', desc: 'Plástico', price: 800 },
+        ],
+      },
+      {
+        name: 'Buffet y Servicio',
+        items: [
+          { name: 'Lava Vajillas Profesional', desc: '450 platos por hora · lava loza y cristalería', price: 6700 },
+          { name: 'Trampa de Grasa', price: 3200 },
+          { name: 'Insertos / Chaffer', priceLabel: 'Entero $50 · Medio $40 · Sexto $35' },
+          { name: 'Insertos Cambros', desc: 'Policarbonato', priceLabel: 'A cotizar según tamaño' },
+          { name: 'Chaffer con Base', desc: 'Sin alcohol sólido', price: 280 },
+          { name: 'Chaffer Bufetera', desc: 'Chaf & Dish, sobre mesa', price: 700 },
+          { name: 'Chaf & Dish', desc: 'Para sopa / compotero', price: 280 },
+          { name: 'Tijeras o Cabrilla de Servicio', price: 100 },
+          { name: 'Charolas de Servicio', desc: 'Baquelita / bar corcho', price: 40 },
+          { name: 'Charola de Acero para Bocadillo', price: 50 },
+          { name: 'Charola Rectangular', desc: 'Circular antiderrapante', price: 50 },
+          { name: 'Olla Budinera', desc: '60, 80 y 100 litros', price: 350 },
+          { name: 'Olla Recta', desc: '60, 80 y 100 litros', price: 32 },
+          { name: 'Coludos', desc: '4 y 5 litros', price: 60 },
+          { name: 'Sartén para Paella', desc: '70 cm', price: 380 },
+          { name: 'Sartenes de Acero', desc: '20, 23 y 40 cm', price: 60 },
+          { name: 'Plato Base de Acero', desc: '32 cm', price: 15 },
+          { name: 'Paninera', price: 1000 },
+          { name: 'Lavamanos Portátil', price: 1400 },
+          { name: 'Cestos para Pan', price: 20 },
+          { name: 'Vajilla Rectangular Honda', desc: 'Porcelana española lisa', price: 22 },
+          { name: 'Salsera de Porcelana', price: 20 },
+          { name: 'Tablas para Picar', desc: '30 x 50 cm', price: 120 },
+        ],
+      },
+      {
+        name: 'Utensilios',
+        items: [
+          { name: 'Globo de Cocina', desc: 'Batidor, mango rojo', price: 38 },
+          { name: 'Cucharón Espumero', price: 38 },
+          { name: 'Cucharón de Hielo de Aluminio', price: 42 },
+          { name: 'Colador Chino de Acero', price: 42 },
+          { name: 'Cucharas y Cucharones de Acero', desc: 'Medidas varias', price: 25 },
+          { name: 'Salsera de Acero Chica', desc: '35 mm', price: 30 },
+          { name: 'Pinzas Largas de Acero', desc: 'Mango de goma', price: 18 },
+          { name: 'Pinzas de Acero Garra', desc: 'Espagueti o ensalada', price: 20 },
+          { name: 'Pinzas de Acero Punta Teflón', desc: 'Ensalada', price: 32 },
+          { name: 'Sopera de Acero', desc: 'Sin cucharón', price: 50 },
+          { name: 'Ceniceros de Cristal', desc: 'Sencillo', price: 7 },
+          { name: 'Saleros / Pimienteros de Cristal', price: 10 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'mesas',
+    title: 'Mesas',
+    image: { src: 'assets/img/catalog/mesas.jpg', credit: 'Foto: Basile Morin / Wikimedia Commons (CC BY-SA 4.0)' },
+    groups: [
+      {
+        name: 'Mesas',
+        items: [
+          { name: 'Tablón', desc: 'Sin mantel', price: 200 },
+          { name: 'Mesa Bridge', price: 200 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'vajilla',
+    title: 'Vajilla',
+    image: { src: 'assets/img/catalog/vajilla.jpg', credit: 'Foto: Santeri Viinamäki / Wikimedia Commons (CC BY-SA 4.0)' },
+    note: 'Se cobrará un extra por entregar el equipo sucio.',
+    groups: [
+      {
+        name: 'Vajilla Cuadrada Honda — Porcelana Española Gourmet',
+        items: [
+          { name: 'Trinche 29 cm', price: 20 },
+          { name: 'Arrocero 27 cm', price: 20 },
+          { name: 'Ensalada 23 cm', price: 20 },
+          { name: 'Hondo Espagueti', price: 20 },
+          { name: 'Compota o Consomé', price: 20 },
+          { name: 'Terno Café y Plato Pequeño', price: 30 },
+          { name: 'Pan 13 cm', price: 20 },
+          { name: 'Pastelero o Postre 18 cm', price: 20 },
+          { name: 'Porta Sobres Canderel y Azúcar', price: 20 },
+        ],
+      },
+      {
+        name: 'Vajilla Redonda MKM — Porcelana Primera',
+        items: [
+          { name: 'Trinche 29 cm', price: 10 },
+          { name: 'Arrocero 27 cm', price: 10 },
+          { name: 'Ensalada', price: 10 },
+          { name: 'Hondo Espagueti', price: 10 },
+          { name: 'Compota o Consomé', price: 10 },
+          { name: 'Terno Café y Plato Pequeño', price: 20 },
+          { name: 'Pan', price: 10 },
+        ],
+      },
+      {
+        name: 'Vajilla Blanca',
+        items: [
+          { name: 'Trinche 29 cm', price: 12 },
+          { name: 'Arrocero 27 cm', price: 12 },
+          { name: 'Ensalada 23 cm', price: 12 },
+          { name: 'Hondo Espagueti', price: 12 },
+          { name: 'Compota o Consomé', price: 12 },
+          { name: 'Pan 13 cm', price: 10 },
+          { name: 'Pastelero o Postre 18 cm', price: 12 },
+          { name: 'Porta Sobres Canderel y Azúcar', price: 20 },
+        ],
+      },
+      {
+        name: 'Adicionales',
+        items: [
+          { name: 'Cremera', price: 30 },
+          { name: 'Azucarera de Porcelana con Tapa', price: 30 },
+          { name: 'Plato Ánfora mod. Tacana', price: 50 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'plaque',
+    title: 'Plaqué / Cubiertos',
+    image: { src: 'assets/img/catalog/plaque.jpg', credit: 'Foto: www.Pixel.la Free Stock Photos / Wikimedia Commons (CC0)' },
+    note: 'Se cobrará un extra por entregar el equipo sucio.',
+    groups: [
+      {
+        name: 'Plaqué Económico',
+        items: [
+          { name: 'Cuchara Sopera', price: 6 },
+          { name: 'Cuchara Pequeña', price: 6 },
+          { name: 'Tenedor', price: 6 },
+          { name: 'Cuchillo', price: 6 },
+        ],
+      },
+      {
+        name: 'Plaqué Merkamenajen 16 Onz',
+        items: [
+          { name: 'Tenedor Largo (Carne)', price: 8 },
+          { name: 'Tenedor Corto (Ensalada)', price: 8 },
+          { name: 'Tenedor Postre', price: 8 },
+          { name: 'Cuchillo Largo', price: 8 },
+          { name: 'Cuchillo Corto', price: 8 },
+          { name: 'Cuchillo Filetero', price: 9 },
+          { name: 'Cuchillo Pescado', price: 9 },
+          { name: 'Cucharita Café', price: 8 },
+          { name: 'Cucharita Postre', price: 8 },
+          { name: 'Cuchara Sopera', price: 8 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'cristaleria',
+    title: 'Cristalería',
+    image: { src: 'assets/img/catalog/cristaleria.jpg', credit: 'Foto: Tony Hisgett / Wikimedia Commons (CC BY 2.0)' },
+    note: 'Se cobrará un extra por entregar el equipo sucio.',
+    groups: [
+      {
+        name: 'Cristalería General',
+        items: [
+          { name: 'Vaso Tubo Cristal H.B. Crisa', price: 5 },
+          { name: 'Vaso Tubo Cristal H.B. Templado Arcoroc', price: 8 },
+          { name: 'Tazón Postre Cristal / Helado', price: 8 },
+          { name: 'Vaso Cubero Alta Resistencia', price: 8 },
+          { name: 'Vaso Old Fashion Templado Arcoroc', price: 8 },
+          { name: 'Copa Vino Tinto / Blanco / Flauta Brasileña', price: 8 },
+          { name: 'Copa Vino Cobalto, Tallo Transparente', price: 15 },
+        ],
+      },
+      {
+        name: 'Copas y Caballitos',
+        items: [
+          { name: 'Copa Martinera', price: 12 },
+          { name: 'Copa para Vino Blanco', price: 12 },
+          { name: 'Copa para Agua', price: 10 },
+          { name: 'Copa para Vino Tinto', price: 10 },
+          { name: 'Copa para Capuccino', price: 10 },
+          { name: 'Copa para Coñac', price: 12 },
+          { name: 'Copa Flauta', price: 12 },
+          { name: 'Caballo de Tequila', price: 4.5 },
+          { name: 'Caballo de Tequila Doble', price: 4.5 },
+          { name: 'Tequilero Barrilete', price: 5.5 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'sillones-de-novios',
+    title: 'Sillones de Novios',
+    image: { src: 'assets/img/catalog/sillones-de-novios.jpg', credit: 'Foto: Michael Gaylard / Wikimedia Commons (CC BY 4.0)' },
+    groups: [
+      {
+        name: 'Sillones de Novios',
+        items: [
+          { name: 'Sillón Alto Princesa', priceLabel: '$1,500 c/u · $2,800 juego' },
+          { name: 'Sillón Doble para Novios', desc: 'Tipo Rococó', price: 3200 },
+          { name: 'Sillón Alto Capitonado', price: 850 },
+        ],
+      },
+    ],
+  },
+];
+
+export function catalogStats() {
+  let items = 0;
+  CATALOG.forEach((section) => section.groups.forEach((g) => { items += g.items.length; }));
+  return { categories: CATALOG.length, items };
+}

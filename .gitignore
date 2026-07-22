@@ -1,0 +1,26 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Claude Code local settings — machine-specific permission grants,
+# not meant to be shared between machines or committed to history
+.claude/settings.local.json
+
+# Logs
+*.log
+
+# Node.js (no build tooling in this project today, but ignored defensively
+# in case a local script/dependency is ever added later)
+node_modules/
+npm-debug.log*
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
